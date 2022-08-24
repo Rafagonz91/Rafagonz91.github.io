@@ -1,0 +1,200 @@
+
+.navcv{
+    a span{
+        color: map-get($font-c, main);
+    }
+    a{
+        margin-left: 60px;
+    }
+    
+}
+.underline {
+    display: inline-block;
+    position: absolute;
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1px;
+        bottom: 0;
+        left: 0;
+        background-color: map-get($bg-color, second);
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.2s ease-in-out;
+    }
+    
+    &:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+        scale: 1;
+    }
+}
+
+.contenidoIndex{   
+    .greattings{
+        position: absolute;
+        top: 200px;
+        .tag2 {
+            color: map-get($font-c, second);
+            font-size: map-get($font-s, xl );
+            opacity: 0;
+            animation: slide-text 0.01s linear 1.5s forwards;
+            
+            @keyframes slide-text {
+                from{ opacity: 0;}
+                to{ opacity: 1;}
+            }
+        }
+       
+        .slide{
+            position: relative;
+            &:after{
+                display: block;
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 100%;
+                width: 0;
+                bottom: 0;
+                z-index: 1;
+                background-color: white;
+                animation: slide 1s ease-out 1s forwards;
+            }
+            @keyframes slide {
+                0%{
+                    width: 0%;
+                    right: 100%;
+                    left: 0%;
+                }
+                50%{
+                    width: 100%;
+                    right: 0%;
+                    left: 0%;
+                }
+                100%{
+                    width: 0%;
+                    left: 100% ;
+                }
+            }
+        }       
+        h2{
+            position: absolute;
+            color: map-get($font-c, main);
+            top: 50px;
+        }
+        p{
+            position: absolute;
+            color: map-get($font-c, main);
+            top: 90px; 
+        }
+    }
+     
+    .tag1 {
+        display: block;
+        white-space: nowrap;
+        border-right: 4px solid map-get($bg-color, second);
+        width: 100%;
+        font-size: map-get($font-s, l);
+        animation: typing 2s steps(30), blink .5s infinite step-end alternate;
+        overflow:hidden;
+        @keyframes typing {
+    
+            from { width: 0}
+            }
+            
+            @keyframes blink {
+             50% { border-color: transparent}
+        }
+        
+    } 
+    .imglink{
+        transition: transform 1s ease-in-out;
+        &:hover{
+            transform: scale(1.2);
+        }
+    }
+    .imglink1{
+        position: absolute;
+        top: 120px;
+        left: 820px;
+        width: 230px;
+        z-index: 3;
+    } 
+    .imglink2{
+        position: absolute;
+        top: 120px;
+        left: 940px;
+        width: 180px;
+        z-index: 1;
+        
+    }
+    .imglink3{
+        position: absolute;
+        top: 250px;
+        left: 710px;
+        width: 170px;
+        z-index: 2;
+    }
+    .imglink4{
+        position: absolute;
+        top: 250px;
+        left:  1010px;
+        width: 180px;
+        z-index: 2;
+    }
+    .imglink5{
+        position: absolute;
+        top: 360px;
+        left: 830px;
+        width: 100px;
+        z-index: 3;
+    }
+    .imglink6{
+        position: absolute;
+        top: 370px;
+        left: 920px;
+        width: 160px;
+        z-index: 3;
+    }
+    .imglink7{
+        position: absolute;
+        top: 100px;
+        left: 760px;
+        width: 150px;
+        z-index: 1;
+    } 
+}
+
+
+.pie{
+    
+    ul li{
+        color: map-get($font-c, main );
+        font-size: map-get($font-s,s );
+        font-weight: map-get($font-w, light);  
+    }
+    div i{
+        color: map-get($font-c, second);
+    }
+    .rrss {
+        
+        animation: bounce 0.8s ;
+        animation-delay: 4.1s;
+        @keyframes bounce {
+            100%{
+                top: -20px;
+            }
+        }
+        &:nth-child(2){
+            animation-delay: 4.2s
+        }
+        &:nth-child(3){
+            animation-delay: 4.3s
+        }
+        &:nth-child(4){
+            animation-delay: 4.4s
+        }
+    }
+}

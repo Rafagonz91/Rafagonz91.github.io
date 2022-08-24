@@ -1,0 +1,536 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+
+/*-----------Index------------*/
+.grillaIndex{
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "cabeceraIndex "
+    "contenedorIndex"
+    "pieIndex";
+    height: 100vh;
+    width: 100%;
+    grid-template-columns:auto;
+    grid-template-rows: 40px auto 40px;
+    background-image: linear-gradient(to left, #00074c, #000e4d, #00134e, #00174e, #021b4e, #021b4e, #021b4e, #021b4e, #00174e, #00134e, #000e4d, #00074c);
+    
+}
+/*------Cabezera Index--------*/
+.cabeceraIndex{
+    grid-area: cabeceraIndex;
+    display: flex;   
+}
+.logoIndex{
+    position: absolute;
+    width: 15%;
+
+}
+
+.contenedorIndex{
+    grid-area: contenedorIndex;
+    display: flex;
+    justify-content: center;
+    padding: 3%; 
+}
+.indexCard{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 60%;
+    height: 80%;
+    background-color: #2b498588;
+    padding-top: 1%;
+    padding-bottom: 3%;
+    padding-right: 10%;
+    padding-left: 3%;
+    box-shadow: 1px 3px 2px 3px rgba(129, 129, 129, 0.596);
+    border-radius: 10px;
+}
+
+.navIndex ul{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+    margin-left: 10px;
+    
+}
+.navIndex li a{
+    padding: 15px; 
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    
+}
+.navIndex li a span{
+    padding-left: 5px;
+    color: white;
+}
+
+.navIndex li a i{
+    padding-right: 8px;
+    color:rgb(255, 138, 5);
+}
+.navIndex ul li :hover{
+    background-color: white;
+    color: black;
+}
+    
+
+.fotoPerfil{
+    position: absolute;
+    top: 10%;
+    left: 70%;
+    width: 20%;
+    z-index: 1000;
+}
+.indexCard h1{
+    padding: 5%;
+    color: rgb(229, 237, 252);
+}
+.indexCard h2{
+    padding: 1%;
+    color:rgb(232, 232, 255);
+}
+.indexCard p{
+    padding: 1%;
+    color:rgb(255, 255, 255);
+}
+
+/*---------Pie de Pagina-------*/
+.pieIndex{
+    grid-area: pieIndex;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(4, 3, 48);
+    padding-top: 0.5%;
+    color:rgb(255, 255, 255);
+    
+}
+.pie h3{
+    display: inline;
+    font-size: 10pt;
+    padding-left: 20px;
+    
+    
+}
+.rrss a i{    
+    color:rgb(255, 115, 1);
+    padding: 8px;
+}
+.rrss a i:hover{
+    color: white;
+    
+}
+
+/*----------PERFIL------------*/
+.grillaGeneral{
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "cabezera cabezera cabezera"
+    "lateralZ contenido lateralD"
+    "pieProfile pieProfile pieProfile";
+    height: 100vh;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows:     60px auto 60px;
+    gap: 10px;
+    background-image: linear-gradient(to left, #00074c, #000e4d, #00134e, #00174e, #021b4e, #021b4e, #021b4e, #021b4e, #00174e, #00134e, #000e4d, #00074c);
+
+       
+}
+hr{
+    width: 80%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+/*-----------Cabezera--------*/
+.cabezera{
+    grid-area: cabezera;
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to left, #00074c, #000e4d, #00134e, #00174e, #021b4e, #021b4e, #021b4e, #021b4e, #00174e, #00134e, #000e4d, #00074c);
+    border-bottom: solid rgba(0, 0, 0, 0.288) 4px;
+    
+
+}
+.cabezeraLogo{
+    width: 60px;
+    padding-bottom: 0.2%;
+}
+.cabezeraNav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 20px;
+}
+.cabezeraNav li a{
+    padding: 15px; 
+    text-decoration: none;
+    font-size: 12pt;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+.cabezeraNav li a i{
+    padding-right: 8px; 
+}
+.tab2:hover{
+ background-color: darkorange;
+}
+
+/*------------LateraZ--------------*/
+.lateralZ{
+    grid-area: lateralZ;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;   
+}
+.tarjeta{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: auto;
+    border-radius: 10px;
+    background-color: #2b498588;
+    padding: 3%;
+    margin-bottom: 4%;
+    
+}
+
+
+.tarjetaAvatar{
+    width: 50%;
+    padding-bottom: 10%;
+}
+.tarjeta h2{
+    font-size: 14pt;
+    color: white;
+}
+.tarjeta hr{
+    width: 100%;
+}
+.tarjetaDatos ul{
+    list-style: none;
+    line-height: 20pt;
+}
+.tarjetaDatos li{
+    font-size: 8pt;
+    color:white;
+}
+.grado{
+    width: 80% ;
+    height: 15%;
+    font-size: 7pt;
+    background-color: rgb(21, 236, 14);
+    padding: 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+.trabajo{
+    width: 80% ;
+    height: 15%;
+    font-size: 7pt;
+    background-color: rgb(49, 186, 240);
+    padding: 5%;
+    border-radius: 10px;
+    text-align: center;
+}
+.tarjeta:hover{
+    background-color: #5a78b388;
+}
+.grado:hover{
+    background-color: rgb(99, 250, 94);
+}
+.trabajo:hover{
+    background-color: rgb(118, 210, 247);
+}
+/*-----------Contenido------------*/
+.contenido{
+    grid-area: contenido;
+    display: flex;
+    flex-direction: column ;
+    overflow-y: scroll;
+    padding-left: 5%;
+    padding-right: 5%;
+   
+    
+}
+
+.contenido hr{
+    width: 100%;
+}
+.contenido::-webkit-scrollbar{
+    width: 7px;
+    
+}
+.contenido::-webkit-scrollbar-thumb{
+    background-color: rgb(255, 123, 0);
+    border-radius: 50px;
+}
+.bienvenidos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 50%;
+    background-color: rgb(255, 251, 0);
+    padding: 10%;
+}
+
+.novedades{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    background-color: rgb(123, 255, 0);
+    padding: 10%;
+
+}
+.Logros{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+    background-color: rgb(255, 174, 0);
+    padding: 10%;
+}
+.titulo{
+    margin-bottom: 15px;
+}
+
+.titulo:hover{    
+    width: 50%;
+    background-color: rgb(0, 0, 0);
+    animation-name: titleAnimation;
+    animation-duration: 1s;
+    color: white;
+    
+}
+@keyframes titleAnimation{
+    0%{ width: 0%;
+     }
+    100%{ width: 50%;       
+    }
+}
+
+
+.lateralD{
+    grid-area: lateralD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  
+}
+.lateralEscudo{
+    width: 50%;
+}
+.lateralD h2{
+    font-size: 14pt;
+    color: white;
+}
+
+/*------- Blog---------------*/
+.grillaBlog{
+    font-family: 'Lato', sans-serif;
+    display: grid;
+    grid-template-areas:
+    "cabezera "
+    "enConstruccion"
+    "pieProfile";
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: 60px auto 60px;
+    gap: 10px;
+    background-image: linear-gradient(to left, #00074c, #000e4d, #00134e, #00174e, #021b4e, #021b4e, #021b4e, #021b4e, #00174e, #00134e, #000e4d, #00074c);
+    
+}
+.enConstruccion{
+    grid-area: enConstruccion;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1%;
+}
+.aviso{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    
+    color: white;
+}
+.aviso p{
+    padding: 1%;
+    background-color: orange;
+    font-size: 14pt;
+
+}
+.temporal{
+    width: 25%;
+}
+
+/*-------------Contacto-----------*/
+.grillaContacto{
+    font-family: 'Lato',sans-serif;
+    display: grid;
+    grid-template-areas:
+    "cabezera "
+    "tarjetaContacto"
+    "pieProfile";
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: 60px auto 60px;
+    gap: 10px;
+    background-image: linear-gradient(to left, #00074c, #000e4d, #00134e, #00174e, #021b4e, #021b4e, #021b4e, #021b4e, #00174e, #00134e, #000e4d, #00074c);
+}
+.contacto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tarjetaContacto{
+    grid-area: tarjetaContacto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-color: white;
+    padding: 3%;
+    border-radius: 10px;
+    background: linear-gradient(45deg, rgba(255,142,20,1) 0%, rgba(255,185,18,1) 48%, rgba(255,115,0,1) 100%);
+    box-shadow: 1px 4px 3px 2px rgb(161, 159, 159);
+}
+.campo{ 
+    margin: 2%;
+    width: 80%;
+}
+.boton{
+    padding: 1%;
+    border-radius: 5px;
+    border: solid gray 0.1px;
+    background-color:rgb(1, 1, 90) ;
+    color: white;
+}
+.tarjetaContacto p{
+    font-size: 10pt;
+    font-weight: bold;
+    line-height: 25px;
+}
+
+.pieProfile{
+    grid-area: pieProfile;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: rgb(4, 3, 48);
+    padding: 1%;
+    color: white;
+    
+}
+.pie h3{
+    display: inline;
+    font-size: 10pt;
+    font-weight: bolder;
+    padding-left: 5px;
+}
+.rrss a{    
+    color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 768px) {
+    .indexCard{
+        width: 90%;
+        height: 70%;
+        align-items: center;
+        padding-right: 3%;
+    }
+    .fotoPerfil{
+        position: absolute;
+        top:350px
+    }
+    .navIndex ul li a span{
+        display: none;
+    }
+    .pie h3{
+        font-size: 6pt;
+    }
+    .cabezeraNav ul li a span{
+        display: none;
+    }
+    
+    .grillaGeneral{
+        display: grid;
+        grid-template-areas:
+        "cabezera"
+        "lateralZ"
+        "contenido"
+        "lateralD"
+        "pieProfile";
+        min-height: 100vh;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10px;
+        background-color: rgb(238, 238, 238);
+    }
+    .contenido{
+       overflow: hidden;
+               
+    }
+    .lateralZ{
+        align-items: center;
+    }
+    .tarjetaAvatar{
+        width: 25%;
+    }
+    .tarjetaContacto{
+        width: 80%;
+    }
+    .tarjetaContacto h1{
+        font-size: 16pt;
+    }
+}
+@media screen and (max-width: 1024px){
+    
+    ul li a span{
+        font-size: 10pt;
+    }
+    .grillaGeneral{
+        display: grid;
+        grid-template-areas:
+        "cabezera"
+        "lateralZ"
+        "contenido"
+        "lateralD"
+        "pieProfile";
+        min-height: 100vh;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        gap: 10px;
+        
+    }
+       
+    .lateralZ{
+        align-items: center;
+    }
+    .tarjetaAvatar{
+        width: 25%;
+    }
+    .tarjetaDatos h2{
+        font-size: 12;
+    }
+}

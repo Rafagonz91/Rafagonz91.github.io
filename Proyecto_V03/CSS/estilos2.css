@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+    
+}   
+
+/*--- Estilos animaciones INDEX----*/
+/*Nav*/
+.underline{
+
+    display: inline-block;
+    position: relative;
+}
+.underline:after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: orange;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.2s ease-in-out;
+}
+.underline:hover:after{
+    transform: scaleX(1);
+    transform-origin: bottom left;
+    scale: 1;
+}
+
+/*Contenido*/
+
+.tag1 {
+display: block;
+
+white-space: nowrap;
+border-right: 4px solid orange;
+width: 80%;
+font-size: 16pt;
+
+animation: typing 3s steps(30), blink .5s infinite step-end alternate;
+overflow:hidden;
+}
+
+@keyframes typing {
+
+from { width: 0}
+}
+
+@keyframes blink {
+ 50% { border-color: transparent}
+}
+
+/*Menu animado*/
+.imglink7{
+    position: absolute;
+    top: 100px;
+    left: 760px;
+    width: 150px;
+    z-index: 1;
+}
+
+.imglink2{
+    position: absolute;
+    top: 120px;
+    left: 940px;
+    width: 180px;
+    z-index: 1;
+}
+.imglink1{
+    position: absolute;
+    top: 120px;
+    left: 820px;
+    width: 230px;
+    z-index: 3;
+}
+.imglink3{
+    position: absolute;
+    top: 250px;
+    left: 710px;
+    width: 170px;
+    z-index: 2;
+}
+.imglink4{
+    position: absolute;
+    top: 250px;
+    left:  1010px;
+    width: 180px;
+    z-index: 2;
+}
+.imglink5{
+    position: absolute;
+    top: 360px;
+    left: 830px;
+    width: 100px;
+    z-index: 3;
+}
+
+.imglink6{
+    position: absolute;
+    top: 370px;
+    left: 920px;
+    width: 160px;
+    z-index: 3;
+}
+
+.imglink{
+    transition: transform 0.2s;
+}
+.imglink:hover{
+    transform: scale(1.3);
+}
+
+.greattings{
+    position: relative;
+    top: 110px;
+}
+
+/*-----Estilo animaciones Footer---*/
+
+.rrss {
+    animation: bounce 0.8s ;
+}
+@keyframes bounce {
+    100%{
+        top: -20px;
+    }
+}
+.rrss:nth-child(2){
+    animation-delay: 0.5s
+}
+.rrss:nth-child(3){
+    animation-delay: 0.6s
+}
+.rrss:nth-child(4){
+    animation-delay: 0.7s
+}
+
+
+/*-----Estilos animaciones Profile----*/
+
+.contenido{
+    min-height: 100vh;
+}
+.card:hover{
+    
+    filter: brightness(110%);
+}
+.avatar{
+    --box-size: 150px;
+    width: var(--box-size);
+    height: var(--box-size);
+    padding: 10px;
+    align-content: center;
+    justify-content: space-evenly;
+}
+.card1:hover{
+    filter: brightness(110%);
+} 
+.navText{ 
+    background: #000;
+    color: black;
+}
+
+/*-------Estilos Animaciones BLog------*/
+.navBlog img {
+    width: 100%;
+}
+
+.text-bar a{
+    display: flex;
+    padding: 10px;
+    color: gray;
+    text-decoration: none;
+    font-family: Verdana, Tahoma, sans-serif;
+    font-weight: bold;
+    font-size: 8pt;
+}
+
+.bannerBlog{
+    width: 10%;
+}
+.blogIntro{
+    background-image: url(../Img/Fondo_Blog.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.card-img-filter{
+    filter: brightness(0.8);
+}
+.rollero{
+    display: flex;
+    font-size: 24pt;
+}
+.lista{
+    margin-left: 10px;
+    font-size: 24pt;
+}
+.rollo{
+    position: absolute;
+    animation: roll 8s ease 1s infinite backwards;
+
+}
+@keyframes roll{
+    0%{
+        opacity: 0;
+        transform: translate3d(0,-70,0);
+    }
+    2.5%, 25%{
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    27.5%, 100%{
+        opacity: 0;
+        transform: translate3d(0,70%,0);
+    }
+}
+.rollo:nth-child(1){
+    animation-delay: 0s;
+    opacity: 0;
+}
+.rollo:nth-child(2){
+    animation-delay: 2s;
+    opacity: 0;
+}
+.rollo:nth-child(3){
+    animation-delay: 4s;
+    opacity: 0;
+}
+.rollo:nth-child(4){
+    animation-delay: 6s;
+    opacity: 0;
+}/*-------Estilos Animaciones Pyme------*/
+
+
+

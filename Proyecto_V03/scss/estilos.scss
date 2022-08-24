@@ -1,0 +1,14 @@
+
+@import "./variables";
+@import "./mixin";
+@import "./cvgram/cvgram";
+@import "./cvgram/mqcv";
+@import "./cvgram/perfil";
+@import "./blog";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}

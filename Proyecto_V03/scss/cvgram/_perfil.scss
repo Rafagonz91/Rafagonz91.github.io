@@ -1,0 +1,15 @@
+.profileCard{
+    
+    background-color: map-get($bg-color, alternative);
+    border-radius: 15px;
+    padding: 1em;
+    .avatar{
+        --box-size: 150px;
+        width: var(--box-size);
+        height: var(--box-size);
+        padding: 10px;
+        align-content: center;
+        justify-content: space-evenly;
+       
+    }
+}

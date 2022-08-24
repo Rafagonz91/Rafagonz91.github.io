@@ -1,0 +1,18 @@
+
+
+@mixin tag-style ($pad,$ml,$mb,$br) {
+   padding: $pad;
+   margin-left: $ml;
+   margin-bottom: $mb;
+   border-radius: $br;
+}
+
+@mixin button-style($border,$radius, $color,$padding,$fc) {
+   border: $border rgb(67, 71, 83);
+   border-radius: $radius;
+   background-color: map-get($btn-c, $color);
+   padding: $padding;
+   font-family: Arial, Helvetica, sans-serif;
+   color: map-get($font-c, $fc );
+   
+}
